@@ -1,3 +1,59 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .center {
     text-align: center;
+}
+
+.row,
+.col {
+    margin-bottom: 0;
+    padding: 0;
+}
+
+/* Nav Bar Section */
+.btn {
+    width: 100px;
+}
+
+#nav-well {
+    background-color: slategrey;
+    height: 100vh;
+    padding-top: 5%;
+}
+
+h1,
+h2 {
+    margin-top: 0;
+}
+
+/* Main Content */
+.container {
+    height: calc(100vh - 50px);
+}
+
+#main-content {
+    padding: 5% 3rem 0;
+    vertical-align: middle;
+}
+
+.imgSize img {
+    width: 150%;
+}
+
+/* #about-well,
+#project-well {
+    margin-top: 5%;
+} */
+
+/* Footer Section */
+.footer {
+    height: 50px;
+}
+
+.footer p {
+    line-height: 50px;
 }
