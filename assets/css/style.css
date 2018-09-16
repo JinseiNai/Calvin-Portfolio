@@ -4,6 +4,10 @@ body {
     padding: 0;
 }
 
+* {
+    color: white;
+}
+
 .center {
     text-align: center;
 }
@@ -14,23 +18,44 @@ body {
     padding: 0;
 }
 
+h1,
+h2 {
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px black;
+}
+
 /* Nav Bar Section */
+h2{
+    font-family: 'Pacifico';
+}
+
 .btn {
     width: 100px;
+    margin-bottom: 20px;
 }
 
 #nav-well {
-    background-color: slategrey;
+    background-color: rgba(112, 128, 144, 0.7);
     height: 100vh;
     padding-top: 5%;
 }
 
-h1,
-h2 {
-    margin-top: 0;
+#iconLinks i {
+    font-size: 2em;
+    margin: 0 10px 10px;
+}
+
+body {
+    background: url("../images/arch-bridge-bg.jpg") right;
+    background-size: cover;
 }
 
 /* Main Content */
+h1 {
+    font-family: 'Abril Fatface';
+}
+
 .container {
     height: calc(100vh - 50px);
 }
@@ -40,20 +65,49 @@ h2 {
     vertical-align: middle;
 }
 
-.imgSize img {
-    width: 150%;
+#selfie {
+    text-align: center;
 }
 
-/* #about-well,
-#project-well {
-    margin-top: 5%;
-} */
+#selfie img {
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 25px;
+}
+
+#aboutMe p {
+    margin-bottom: 5px;
+    line-height: 1.2em;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px black;
+    font-family: 'Kanit', sans-serif;
+}
+
+.description {
+    color: rgb(29, 172, 16);
+    text-shadow: 1px 1px rgb(41, 40, 44);
+}
 
 /* Footer Section */
-.footer {
+/* .footer {
     height: 50px;
+    bottom: 0;
 }
 
 .footer p {
     line-height: 50px;
+} */
+
+@media only screen and (max-width: 600px) {
+    #nav-well {
+        height: 100%;
+    }
+
+    #nav-btn li{
+        display: inline;
+    }
+
+    h1 {
+        margin-bottom: 25px;
+    }
 }
